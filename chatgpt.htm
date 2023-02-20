@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Restaurant</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Pizza Restaurant</h1>
+		<nav>
+			<ul>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="banner">
+			<img src="banner.jpg" alt="Pizza Restaurant">
+		</section>
+		<section id="menu">
+			<h2>Our Menu</h2>
+			<div class="menu-item">
+				<img src="pizza1.jpg" alt="Pizza 1">
+				<h3>Pizza 1</h3>
+				<p>Description of pizza 1.</p>
+			</div>
+			<div class="menu-item">
+				<img src="pizza2.jpg" alt="Pizza 2">
+				<h3>Pizza 2</h3>
+				<p>Description of pizza 2.</p>
+			</div>
+			<!-- more pizza items here -->
+		</section>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Description of the restaurant and its history.</p>
+			<img src="about.jpg" alt="About Us">
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form action="submit.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © 2021 Pizza Restaurant.
+	</footer>
+</body>
+</html>
+CSS code:
+
+{
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+nav {
+display: inline-block;
+float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li {
+display: inline-block;
+margin-left: 20px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+main {
+padding: 20px;
+}
+
+#banner img {
+width: 100%;
+}
+
+#menu h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.menu-item {
+display: inline-block;
+width: 200px;
+margin: 20px;
+text-align: center;
+}
+
+.menu-item img {
+width: 100%;
+}
+
+#about h2 {
+text-align: center;
+margin-bottom:<
